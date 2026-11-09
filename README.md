@@ -26,7 +26,7 @@ The production build is exported to `out/` and can be deployed to any static hos
 ## Content and assets
 
 - Property photography is in `public/images/client/`.
-- The labelled countryside stock image is in `public/images/stock/`.
+- The clearly labelled illustrative Pexels guest-room video and poster are in `public/videos/` and `public/images/stock/`; they are not footage of the property.
 - Photo licensing and permission notes are in [IMAGE_SOURCES.md](./IMAGE_SOURCES.md).
 - Design decisions and visual research are in [DESIGN_STRATEGY.md](./DESIGN_STRATEGY.md).
 - Edit contact details in `src/lib/contact.ts` and gallery content in `src/data/gallery.ts`.

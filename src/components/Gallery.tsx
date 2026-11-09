@@ -81,7 +81,7 @@ export function Gallery() {
           </Reveal>
         ))}
       </div>
-      <p className="gallery-note">Property photographs supplied by Dlombi&apos;s Guesthouse. The countryside image is illustrative and is not a photograph of the property.</p>
+      <p className="gallery-note">Property photographs supplied by Dlombi&apos;s Guesthouse.</p>
 
       <AnimatePresence>
         {activeImage && activeIndex !== null && (

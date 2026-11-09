@@ -14,7 +14,7 @@ The supplied photographs are the only evidence of the property. They show a gues
 
 ## Visual direction
 
-**African boutique hospitality × contemporary editorial design.** Warm, quiet and welcoming, with the supplied grey-and-brown identity translated into an ivory, charcoal, olive and natural-brown palette. Use authentic guesthouse photographs for property descriptions. One Pexels landscape is used only as explicitly labelled regional context and is never represented as a view of the property.
+**African boutique hospitality × contemporary editorial design.** Warm, quiet and welcoming, with the supplied grey-and-brown identity translated into an ivory, charcoal, olive and natural-brown palette. Use authentic guesthouse photographs for property descriptions. Any Pexels footage is clearly labelled as illustrative and never represented as a view of the property.
 
 ## Palette and type
 
@@ -27,18 +27,17 @@ The supplied photographs are the only evidence of the property. They show a gues
 | Olive | `#71785E` | Calls to action and emphasis |
 | Natural brown | `#927659` | Heritage accent |
 
-- **DM Serif Display** for distinctive, restrained editorial headlines.
-- **DM Sans** for readable navigation, body text and form controls.
+- **DM Sans** is used consistently across the entire site, with bold 700–800 weights for headings and clear 400–600 weights for supporting text and controls.
 - Headline sizes are responsive and paired with short copy, generous line-height and controlled letter spacing.
 
 ## Homepage structure
 
 1. Minimal fixed header and mobile menu.
-2. Image-led hero using a supplied courtyard photograph.
+2. Image-led hero using a supplied garden photograph.
 3. Guesthouse introduction and garden photograph.
 4. Accommodation image pair without invented room categories.
-5. Place-led context with stock-image disclosure.
-6. Lightbox gallery, with property and context images labelled.
+5. Guest-room mood video with a clear illustrative-footage disclosure.
+6. Lightbox gallery, featuring supplied property photographs.
 7. Dennilton location and a Google Maps town search (not a fabricated property pin).
 8. Enquiry form that opens a prefilled WhatsApp message; email is the fallback.
 9. Contact-focused footer.
@@ -47,7 +46,7 @@ The supplied photographs are the only evidence of the property. They show a gues
 
 Sections and shared interactions are separated into React components. Property gallery content is centralised in `src/data/gallery.ts`; contact details are centralised in `src/lib/contact.ts`.
 
-Three motion moments are used: a restrained hero image drift and staged headline entrance; small, one-time section reveals; and a soft gallery lightbox transition. Navigation and buttons use short CSS transitions. `prefers-reduced-motion` disables non-essential movement. Gallery controls support keyboard arrows/Escape and touch swipes.
+Three motion moments are used: a restrained hero image drift and staged headline entrance; small, one-time section reveals; and a soft gallery lightbox transition. The illustrative video is muted and respects reduced-motion preferences. Navigation and buttons use short CSS transitions. `prefers-reduced-motion` disables non-essential movement. Gallery controls support keyboard arrows/Escape and touch swipes.
 
 ## Mobile UX
 

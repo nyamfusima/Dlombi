@@ -1,11 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", display: "swap" });
-const dmSerif = DM_Serif_Display({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-dm-serif", display: "swap" });
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata: Metadata = {
@@ -17,10 +21,10 @@ export const metadata: Metadata = {
     openGraph: {
       url: siteUrl,
       images: [{
-        url: "/images/client/courtyard.webp",
+        url: "/images/client/garden.webp",
         width: 1024,
         height: 768,
-        alt: "The covered courtyard at Dlombi's Guesthouse",
+        alt: "The landscaped garden at Dlombi's Guesthouse",
       }],
     },
   } : {}),
@@ -31,17 +35,17 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     ...(siteUrl ? { url: siteUrl } : {}),
     ...(siteUrl ? { images: [{
-      url: "/images/client/courtyard.webp",
+      url: "/images/client/garden.webp",
       width: 1024,
       height: 768,
-      alt: "The covered courtyard at Dlombi's Guesthouse",
+      alt: "The landscaped garden at Dlombi's Guesthouse",
     }] } : {}),
   },
   twitter: {
     card: "summary_large_image",
     title: "Dlombi's Guesthouse | Dennilton, South Africa",
     description: "A warm welcome and township and rural accommodation in Dennilton, South Africa.",
-    ...(siteUrl ? { images: ["/images/client/courtyard.webp"] } : {}),
+    ...(siteUrl ? { images: ["/images/client/garden.webp"] } : {}),
   },
 };
 
@@ -67,7 +71,7 @@ const businessData = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-ZA" className={`${dmSans.variable} ${dmSerif.variable}`}>
+    <html lang="en-ZA" className={dmSans.variable}>
       <body>
         <Header />
         <main>{children}</main>

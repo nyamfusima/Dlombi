@@ -5,12 +5,11 @@ export function Hero() {
     <section className="hero" id="home" aria-labelledby="hero-title">
       <Image
         className="hero-image"
-        src="/images/client/courtyard.webp"
-        alt="The covered courtyard and outdoor seating at Dlombi's Guesthouse"
+        src="/images/client/garden.webp"
+        alt="The landscaped garden at Dlombi's Guesthouse"
         fill
-        priority
+        preload
         sizes="100vw"
-        loading="eager"
         quality={88}
       />
       <div className="hero-shade" />
