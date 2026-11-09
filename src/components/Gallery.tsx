@@ -76,7 +76,7 @@ export function Gallery() {
               aria-label={`Open image ${index + 1}: ${image.label}`}
             >
               <Image src={image.src} alt={image.alt} fill sizes="(max-width: 720px) 50vw, 33vw" quality={80} />
-              <span className="gallery-hover"><span>{image.label}</span><span aria-hidden="true">↗</span></span>
+              <span className="gallery-hover"><span>{image.label}</span><span>View</span></span>
             </button>
           </Reveal>
         ))}

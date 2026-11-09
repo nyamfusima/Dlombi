@@ -127,7 +127,7 @@ export function Enquiry() {
             </div>
             {error && <p className="form-message form-error" role="alert">{error}</p>}
             {showFallback && <p className="form-message" role="status">WhatsApp did not open. You can send your enquiry by email instead.</p>}
-            <button className="button button-form" type="submit"><MessageCircle size={17} /> Send enquiry via WhatsApp <span aria-hidden="true">↗</span></button>
+            <button className="button button-form" type="submit"><MessageCircle size={17} /> Send enquiry via WhatsApp</button>
             {showFallback && <a className="email-fallback" href={mailto}><Mail size={16} /> Continue by email</a>}
             <p className="form-note">This sends an enquiry only. Your stay is not booked until the guesthouse confirms availability.</p>
           </form>

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, MessageCircle, Phone } from "lucide-react";
+import { ChevronUp, Mail, MessageCircle, Phone } from "lucide-react";
 import { contact } from "@/lib/contact";
 import { BedMark } from "./BedMark";
 
@@ -28,9 +28,9 @@ export function Footer() {
           <p className="footer-label">SAY HELLO</p>
           <a href={contact.phoneHref}><Phone size={15} />{contact.phoneDisplay}</a>
           <a href={`mailto:${contact.email}`}><Mail size={15} />{contact.email}</a>
-          <a href={`https://wa.me/${contact.whatsappNumber}`} target="_blank" rel="noreferrer"><MessageCircle size={15} />WhatsApp us <ArrowUpRight size={14} /></a>
+          <a href={`https://wa.me/${contact.whatsappNumber}`} target="_blank" rel="noreferrer"><MessageCircle size={15} />          WhatsApp us</a>
         </div>
-        <a className="back-top" href="#home" aria-label="Back to top"><ArrowUpRight size={20} /></a>
+                  <a className="back-top" href="#home" aria-label="Back to top"><ChevronUp size={20} strokeWidth={1.5} /></a>
       </div>
       <div className="footer-bottom section-wrap">
         <span>© {new Date().getFullYear()} Dlombi&apos;s Guesthouse</span>

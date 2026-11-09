@@ -41,7 +41,7 @@ export function Experience() {
             and rural accommodation together in a setting that feels grounded
             and unhurried.
           </p>
-          <a className="text-link" href="#location">Find us in Dennilton <span aria-hidden="true">↘</span></a>
+          <a className="button button-outline" href="#location">Find us in Dennilton</a>
           <span className="experience-note">A QUIETER KIND OF STAY</span>
         </Reveal>
       </div>

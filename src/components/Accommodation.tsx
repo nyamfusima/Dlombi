@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 export function Accommodation() {
@@ -36,7 +35,7 @@ export function Accommodation() {
       </div>
       <div className="accommodation-bottom">
         <p>Have a question about the rooms or your dates? We&apos;re happy to help.</p>
-        <a className="round-link" href="#contact" aria-label="Enquire about accommodation"><ArrowUpRight size={20} strokeWidth={1.5} /></a>
+        <a className="button button-dark" href="#contact">Enquire about rooms</a>
       </div>
     </section>
   );

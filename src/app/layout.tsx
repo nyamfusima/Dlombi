@@ -10,45 +10,40 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   display: "swap",
 });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
+
+const title = "Dlombi's Guesthouse | Dennilton, South Africa";
+const description = "A warm welcome and peaceful township and rural accommodation in Dennilton, South Africa. Enquire directly by WhatsApp, phone or email.";
+const shareImage = {
+  url: "/og-image.jpg",
+  width: 1200,
+  height: 630,
+  alt: "The landscaped garden at Dlombi's Guesthouse in Dennilton",
+};
 
 export const metadata: Metadata = {
-  title: "Dlombi's Guesthouse | Dennilton, South Africa",
-  description: "A warm welcome and township and rural accommodation in Dennilton, South Africa. Enquire directly with Dlombi's Guesthouse about your stay.",
-  ...(siteUrl ? {
-    metadataBase: new URL(siteUrl),
-    alternates: { canonical: "/" },
-    openGraph: {
-      url: siteUrl,
-      images: [{
-        url: "/images/client/garden.webp",
-        width: 1024,
-        height: 768,
-        alt: "The landscaped garden at Dlombi's Guesthouse",
-      }],
-    },
-  } : {}),
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Dlombi's Guesthouse | Dennilton, South Africa",
-    description: "A warm welcome and township and rural accommodation in Dennilton, South Africa.",
+    title,
+    description,
+    url: "/",
+    siteName: "Dlombi's Guesthouse",
     type: "website",
     locale: "en_ZA",
-    ...(siteUrl ? { url: siteUrl } : {}),
-    ...(siteUrl ? { images: [{
-      url: "/images/client/garden.webp",
-      width: 1024,
-      height: 768,
-      alt: "The landscaped garden at Dlombi's Guesthouse",
-    }] } : {}),
+    images: [shareImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dlombi's Guesthouse | Dennilton, South Africa",
-    description: "A warm welcome and township and rural accommodation in Dennilton, South Africa.",
-    ...(siteUrl ? { images: ["/images/client/garden.webp"] } : {}),
+    title,
+    description,
+    images: [shareImage.url],
   },
 };
-
 export const viewport: Viewport = {
   themeColor: "#f6f4ef",
   width: "device-width",

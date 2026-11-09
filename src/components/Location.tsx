@@ -1,4 +1,4 @@
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { contact } from "@/lib/contact";
 import { Reveal } from "./Reveal";
 
@@ -15,7 +15,7 @@ export function Location() {
             need help with directions.
           </p>
           <a className="button button-dark" href={contact.mapsHref} target="_blank" rel="noreferrer">
-            <MapPin size={16} strokeWidth={1.6} /> Open map <ArrowUpRight size={16} strokeWidth={1.6} />
+            <MapPin size={16} strokeWidth={1.6} /> Open map
           </a>
         </Reveal>
         <Reveal className="location-card" delay={0.12}>
@@ -24,7 +24,7 @@ export function Location() {
           <p className="location-place">Dennilton</p>
           <p className="location-country">South Africa</p>
           <span className="location-coordinates">SOUTH AFRICA</span>
-          <a href={contact.mapsHref} target="_blank" rel="noreferrer" aria-label="View Dennilton on Google Maps">VIEW ON MAP <ArrowUpRight size={14} /></a>
+          <a href={contact.mapsHref} target="_blank" rel="noreferrer" aria-label="View Dennilton on Google Maps">VIEW ON MAP</a>
         </Reveal>
       </div>
     </section>

@@ -26,8 +26,8 @@ export function Hero() {
           Warm hospitality and a peaceful place to stay in Dennilton.
         </p>
         <div className="hero-actions hero-enter hero-enter-4">
-          <a className="button button-light" href="#contact">Enquire about a stay <span aria-hidden="true">↗</span></a>
-          <a className="text-link text-link-light" href="#about">Discover Dlombi&apos;s <span aria-hidden="true">↓</span></a>
+          <a className="button button-gold" href="#contact">Enquire about a stay</a>
+          <a className="button button-ghost" href="#about">Discover the guesthouse</a>
         </div>
       </div>
       <div className="hero-bottom">

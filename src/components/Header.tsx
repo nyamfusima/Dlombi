@@ -48,7 +48,7 @@ export function Header() {
           ))}
         </nav>
 
-        <a className="header-cta" href="#contact">Enquire about a stay <span aria-hidden="true">↗</span></a>
+        <a className="header-cta" href="#contact">        Enquire</a>
         <a className="header-phone" href={contact.phoneHref} aria-label={`Call ${contact.phoneDisplay}`}>
           {contact.phoneDisplay}
         </a>
@@ -78,10 +78,10 @@ export function Header() {
             style={{ transitionDelay: menuOpen ? `${index * 45}ms` : "0ms" }}
             onClick={closeMenu}
           >
-            <span>0{index + 1}</span>{label}<span aria-hidden="true">↗</span>
+            <span>0{index + 1}</span>{label}
           </a>
         ))}
-        <a className="mobile-nav-cta" href="#contact" onClick={closeMenu}>Enquire about a stay <span aria-hidden="true">↗</span></a>
+        <a className="mobile-nav-cta" href="#contact" onClick={closeMenu}>        Enquire about a stay</a>
       </nav>
     </header>
   );

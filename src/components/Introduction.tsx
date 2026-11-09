@@ -21,7 +21,7 @@ export function Introduction() {
             Whether you are visiting the area or passing through, make your
             enquiry and speak with us about the stay that suits your plans.
           </p>
-          <a className="text-link" href="#accommodation">Get to know the guesthouse <span aria-hidden="true">↘</span></a>
+          <a className="button button-outline" href="#accommodation">Get to know the guesthouse</a>
         </Reveal>
       </div>
       <Reveal className="intro-image image-frame">
